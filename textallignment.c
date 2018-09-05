@@ -2,10 +2,20 @@
  int main()
 {
     int i,j,k,n;
-	printf("enter the value of n \n");
-	scanf("%d",&n);
-for(i=0; i<n; i++) {
-		for(j=i+1; j<n; j++) {
+	while(1)
+	{
+		printf("Enter the value of n: \n");
+		scanf("%d",&n);
+	if(n<18)
+	{
+		printf("Input  is wrong");
+	}
+	else
+	{
+	 	for(i=0; i<n; i++) 
+		{
+		for(j=i+1; j<n; j++) 
+		{
 			printf(" ");
 		}
 		for(j=n-i; j<n+1; j++) {
@@ -17,8 +27,7 @@ for(i=0; i<n; i++) {
 		printf("\n");
 	}
 	for(i=0; i<n+1; i++)
-	{
-		//print H upto n times in column wise and print column upto n+1 times
+	{	//print H upto n times in column wise and print column upto n+1 times
 		for(j=0; j<((n-1)/2); j++)
 		{
 			printf(" ");
@@ -104,6 +113,8 @@ for(i=0; i<n; i++) {
 			printf("H");
 		}
 		printf("\n");
+		}
 	}
     return 0;
+	}
 }
