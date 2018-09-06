@@ -1,3 +1,4 @@
+//Programme of textallignment using for loop 
 #include<stdio.h>
  int main()
 {
